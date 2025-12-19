@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.user-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.selection-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.selection-container h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.selection-container p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.role-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.teacher-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.teacher-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.student-btn {
+  background: #2196F3;
+  color: white;
+}
+
+.student-btn:hover {
+  background: #1976D2;
+  transform: translateY(-2px);
+}
+
+.name-input-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.name-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.name-container h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.name-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.name-input:focus {
+  border-color: #2196F3;
+}
+
+.submit-name-btn {
+  width: 100%;
+  padding: 15px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-name-btn:hover {
+  background: #1976D2;
+}
+
+@media (max-width: 768px) {
+  .selection-container, .name-container {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .selection-container h1 {
+    font-size: 2em;
+  }
+  
+  .button-group {
+    gap: 10px;
+  }
+  
+  .role-btn {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+}
